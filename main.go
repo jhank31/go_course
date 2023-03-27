@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
+import "src/go_desde_0/variables"
 
 func main() {
-	fmt.Println("Hola mundo")
+
+	variables.MuestroEnteros()
 }
