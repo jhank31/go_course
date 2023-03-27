@@ -1,16 +1,18 @@
 package main
 
-import (
-	"src/go_desde_0/ejercicios"
-	//"runtime"
-	//"src/go_desde_0/variables"
-)
+import "src/go_desde_0/teclado"
+
+//"src/go_desde_0/ejercicios"
+//"runtime"
+//"src/go_desde_0/variables"
 
 func main() {
 
-	_, texto := ejercicios.ConvertirAEntero("20")
+	teclado.LeerDatos()
 
-	println(texto)
+	// _, texto := ejercicios.ConvertirAEntero("20")
+
+	// println(texto)
 
 	// variables.MuestroEnteros()
 	// variables.MostrarRestoDatos()
