@@ -32,6 +32,5 @@ func PedirNumero() string {
 	for iteracion := 1; iteracion <= 10; iteracion++ {
 		texto += fmt.Sprintf("%d x %d = %d \n", numero, iteracion, numero*iteracion)
 	}
-	fmt.Println(texto)
 	return texto
 }

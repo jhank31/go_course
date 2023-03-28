@@ -1,7 +1,7 @@
 package main
 
 import (
-	"src/go_desde_0/ejercicios"
+	"src/go_desde_0/files"
 	//"src/go_desde_0/teclado"
 )
 
@@ -13,7 +13,7 @@ func main() {
 
 	//teclado.LeerDatos()
 	//iteraciones.Iterar()
-	ejercicios.PedirNumero()
+	files.LeoArchivo()
 
 	// _, texto := ejercicios.ConvertirAEntero("20")
 
