@@ -9,8 +9,9 @@ import (
 
 var numero int
 var err error
+var texto string
 
-func PedirNumero() {
+func PedirNumero() string {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	fmt.Println("Ingreasa un numero : ")
@@ -29,7 +30,8 @@ func PedirNumero() {
 
 	}
 	for iteracion := 1; iteracion <= 10; iteracion++ {
-		fmt.Printf("%d x %d = %d \n", numero, iteracion, numero*iteracion)
+		texto += fmt.Sprintf("%d x %d = %d \n", numero, iteracion, numero*iteracion)
 	}
-
+	fmt.Println(texto)
+	return texto
 }
