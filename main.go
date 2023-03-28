@@ -1,6 +1,9 @@
 package main
 
-import "src/go_desde_0/teclado"
+import (
+	"src/go_desde_0/ejercicios"
+	//"src/go_desde_0/teclado"
+)
 
 //"src/go_desde_0/ejercicios"
 //"runtime"
@@ -8,7 +11,9 @@ import "src/go_desde_0/teclado"
 
 func main() {
 
-	teclado.LeerDatos()
+	//teclado.LeerDatos()
+	//iteraciones.Iterar()
+	ejercicios.PedirNumero()
 
 	// _, texto := ejercicios.ConvertirAEntero("20")
 
@@ -43,4 +48,5 @@ func main() {
 	// default:
 	// 	fmt.Printf("%s \n", os)
 	// }
+
 }
