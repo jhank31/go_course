@@ -1,8 +1,7 @@
 package main
 
 import (
-	"src/go_desde_0/files"
-	//"src/go_desde_0/teclado"
+	"src/go_desde_0/mapas"
 )
 
 //"src/go_desde_0/ejercicios"
@@ -11,9 +10,16 @@ import (
 
 func main() {
 
+	//arreglos_slices.MostrarSlice()
+	//arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
+
 	//teclado.LeerDatos()
 	//iteraciones.Iterar()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+	//funciones.Calculos()
+	//funciones.LlamarClosure()
+	//funciones.Exponencia(4)
 
 	// _, texto := ejercicios.ConvertirAEntero("20")
 
