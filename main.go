@@ -1,7 +1,8 @@
 package main
 
 import (
-	"src/go_desde_0/defer_panic"
+	"fmt"
+	"src/go_desde_0/goroutines"
 )
 
 //"src/go_desde_0/ejercicios"
@@ -15,8 +16,14 @@ func main() {
 	//users.AltaUsuario()
 	// Valentina := new(modelos.Mujer)
 	// ejer_interfaces.HumanosRespirando(Valentina)
-	defer_panic.VerDefer()
+	//defer_panic.EjemploPanic()
+	go goroutines.MiNombreLento("Jhancarlos")
 
+	fmt.Println("estoy aqui")
+
+	var x string
+
+	fmt.Scanln(&x)
 	//teclado.LeerDatos()
 	//iteraciones.Iterar()
 	//files.LeoArchivo()
