@@ -17,13 +17,13 @@ func main() {
 	// Valentina := new(modelos.Mujer)
 	// ejer_interfaces.HumanosRespirando(Valentina)
 	//defer_panic.EjemploPanic()
-	go goroutines.MiNombreLento("Jhancarlos")
-
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Jhancarlos", canal1)
+	defer func() {
+		<-canal1
+	}()
 	fmt.Println("estoy aqui")
 
-	var x string
-
-	fmt.Scanln(&x)
 	//teclado.LeerDatos()
 	//iteraciones.Iterar()
 	//files.LeoArchivo()
